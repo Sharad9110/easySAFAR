@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: aqua;
+}
+
+#customerForm{
+    height : 33rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    border : 1px dotted red;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input{
+    width : 10rem;
+    margin-bottom: 10px;
+}
