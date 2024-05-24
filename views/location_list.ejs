@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/location.css">
+<div class="location">
+    <ul>
+        <% if(data.area) {%>
+         <h1>  <li > Area :  <%= data.area %>  </li> 
+               <li> Space : <%= data.space %> Cars</li> </h1>
+            <%} else{%>
+                <h1> <li style="color : green"> NO Location Found For This Area! </li> </h1>
+                <%}%>
+    </ul>
+    <div class="locationImage" style="margin-left: 30rem;">
+        <img src="<%= data.avatar %>" alt="Error in Finding Images" class = "l_image">
+    </div>
+</div>

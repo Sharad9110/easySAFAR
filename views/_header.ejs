@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/header.css">
+<div id = "nav">
+
+<div id = "welcome>" ><h1> Welcome To easySAFAR </h1> </div>
+
+
+<div id = "auth">
+<ul>
+    <%if(locals.user){%> 
+         <li> <%= user.name %></li>
+         <a href = "/user/sign-out"> Sign-Out</a>
+             <%}else{%>
+            <a href="/user/sign-in">Sign-In</a>
+            <a href="/user/sign-up">Sign-up</a>
+            <%}%>
+</ul>
+</div>
+
+</div>

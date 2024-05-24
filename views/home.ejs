@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/home.css">
+<body>
+
+    <div id = "vehicles">
+        <div class = "homeVehicle">
+             <img src="images/pexels-aleksejs-bergmanis-681335.jpg" alt="error" class = "homeimg">
+        </div>
+        <div class = "homeVehicle">
+        <img src="images/pexels-mikechie-esparagoza-1600757.jpg" alt="error" class = "homeimg">
+        </div>
+        <div class = "homeVehicle">
+        <img src="images/pexels-oleksandr-p-1031698.jpg" alt="error" class = "homeimg">
+        </div>
+    </div>
+
+    <div class = "locations">
+        <h3> Location in Your Area</h3>
+      <ul>
+        <% for(data of data){%>
+           <li> <a  href = ""> <%= data.location %> </a> </li>
+         <%}%>
+        </ul>
+    </div>
+
+</body>
